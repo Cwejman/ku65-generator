@@ -1,0 +1,20 @@
+    <ku:Blankett nummer="2314">
+        <ku:Arendeinformation>
+            <ku:Arendeagare>{ config.orgNr }</ku:Arendeagare>
+            <ku:Period>{ config.year }</ku:Period>
+        </ku:Arendeinformation>
+        <ku:Blankettinnehall>
+            <ku:KU65>
+                <ku:InkomsttagareKU65>
+                    <ku:Inkomsttagare faltkod="215">{ pin }</ku:Inkomsttagare>
+                </ku:InkomsttagareKU65>
+                <ku:UppgiftslamnareKU65>
+                    <ku:UppgiftslamnarId faltkod="201">{ config.orgNr }</ku:UppgiftslamnarId>
+                    <ku:NamnUppgiftslamnare faltkod="202">{ config.orgName }</ku:NamnUppgiftslamnare>
+                </ku:UppgiftslamnareKU65>
+                <ku:Inkomstar faltkod="203">{ config.year }</ku:Inkomstar>
+                <ku:Specifikationsnummer faltkod="570">{ index }</ku:Specifikationsnummer>
+                <ku:MottagetGavobelopp faltkod="621">{ amount }</ku:MottagetGavobelopp>
+            </ku:KU65>
+        </ku:Blankettinnehall>
+    </ku:Blankett>

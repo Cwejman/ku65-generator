@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Skatteverket xmlns="http://xmls.skatteverket.se/se/skatteverket/ai/instans/infoForBeskattning/10.0"
+              xmlns:gm="http://xmls.skatteverket.se/se/skatteverket/ai/gemensamt/infoForBeskattning/10.0"
+              xmlns:ku="http://xmls.skatteverket.se/se/skatteverket/ai/komponent/infoForBeskattning/10.0"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" omrade="Kontrolluppgifter"
+              xsi:schemaLocation="http://xmls.skatteverket.se/se/skatteverket/ai/instans/infoForBeskattning/10.0 http://xmls.skatteverket.se/se/skatteverket/ai/kontrolluppgift/instans/Kontrolluppgifter_10.0.xsd"
+>
+    <ku:Avsandare>
+        <ku:Programnamn>KUfilsprogrammet</ku:Programnamn>
+        <ku:Organisationsnummer>{ config.orgNr }</ku:Organisationsnummer>
+        <ku:TekniskKontaktperson>
+            <ku:Namn>{ config.techName }</ku:Namn>
+            <ku:Telefon>{ config.techPhone }</ku:Telefon>
+            <ku:Epostadress>{ config.techMail }</ku:Epostadress>
+            <ku:Utdelningsadress1>{ config.techStreet }</ku:Utdelningsadress1>
+            <ku:Postnummer>{ config.techZip }</ku:Postnummer>
+            <ku:Postort>{ config.techCity }</ku:Postort>
+        </ku:TekniskKontaktperson>
+        <ku:Skapad>{ createdAt }</ku:Skapad>
+    </ku:Avsandare>
+    <ku:Blankettgemensamt>
+        <ku:Uppgiftslamnare>
+            <ku:UppgiftslamnarePersOrgnr>{ config.orgNr }</ku:UppgiftslamnarePersOrgnr>
+            <ku:Kontaktperson>
+                <ku:Namn>{ config.contactName }</ku:Namn>
+                <ku:Telefon>{ config.contactPhone }</ku:Telefon>
+                <ku:Epostadress>{ config.contactMail }</ku:Epostadress>
+                <ku:Sakomrade>donationer</ku:Sakomrade>
+            </ku:Kontaktperson>
+        </ku:Uppgiftslamnare>
+    </ku:Blankettgemensamt>
+    { content }
+</Skatteverket>
