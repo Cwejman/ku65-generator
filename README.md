@@ -1,5 +1,7 @@
 # KU65 Generator
 
+<img src="screenshot.png" style="border-radius: 1rem;" />
+
 This repo is a small website to be run locally, it takes transaction data and generates the KU65 xml form for submission to the Swedish Tax Agency.
 
 ## Preamble
